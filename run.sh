@@ -3,6 +3,7 @@
 FARMS=$(ls .spec/*.farm)
 RUN=./lem-in
 
+return 
 for farm in $FARMS
 do
 	echo $farm
