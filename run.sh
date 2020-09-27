@@ -1,7 +1,7 @@
 #!/bin/bash
 
-FARMS=$(ls *.farm)
-RUN=./lem-in
+FARMS=$(ls ./*.farm)
+RUN=../lem-in
 
 for farm in $FARMS; do $RUN < $farm | grep -E '^L' > $farm.res; done
  
