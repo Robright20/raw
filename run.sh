@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DIR=./.spec
-FARMS=$DIR/*.farm
+DIR=.spec
+FARMS=$(ls $DIR/*.farm)
 RUN=./lem-in
 
 for farm in $FARMS; do $RUN < $farm | grep -E '^L' > $DIR/$farm.res; done
